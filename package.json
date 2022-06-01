@@ -1,0 +1,38 @@
+{
+  "name": "@gregsgotlegs/streak-counter",
+  "version": "0.0.1",
+  "description": "",
+  "main": "jest.config.js",
+  "module": "./dist/index.module.js",
+  "unpkg": "./dist/index.umd.js",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gregsgotlegs/streak-counter.git"
+  },
+  "keywords": [],
+  "author": "Greg Hare",
+  "license": "ISC",
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "source": "src/index.ts",
+  "exports": {
+    "require": "./dist/index.cjs",
+    "default": "./dist/index.modern.js"
+  },
+  "bugs": {
+    "url": "https://github.com/gregsgotlegs/streak-counter/issues"
+  },
+  "homepage": "https://github.com/gregsgotlegs/streak-counter#readme",
+  "dependencies": {
+    "jsdom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^16.2.14",
+    "microbundle": "^0.15.0"
+  }
+}
