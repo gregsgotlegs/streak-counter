@@ -1,5 +1,5 @@
-import { formattedDate } from "../__tests__/index.tests";
-import { buildStreak, KEY, shouldIncrementOrResetStreakCount, Streak } from "./lib";
+
+import { buildStreak, formattedDate, KEY, shouldIncrementOrResetStreakCount, Streak } from "./lib";
 
 export function streakCounter(storage: Storage, date: Date): Streak {
     const streakInLocalStorage = storage.getItem(KEY);

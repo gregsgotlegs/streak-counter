@@ -2,7 +2,7 @@
   "name": "@gregsgotlegs/streak-counter",
   "version": "0.0.1",
   "description": "",
-  "main": "jest.config.js",
+  "main": "./dist/index.cjs",
   "module": "./dist/index.module.js",
   "unpkg": "./dist/index.umd.js",
   "scripts": {

@@ -1,5 +1,3 @@
-import { formattedDate } from "../__tests__/index.tests";
-
 // Used when storing in localStorage
 export const KEY = "streak";
 
@@ -38,4 +36,8 @@ export function buildStreak(date: Date, partialStreak: Partial<Streak>): Streak 
     }
 
     return streak;
+}
+
+export function formattedDate(date: Date): string {
+    return date.toLocaleDateString("en-US");
 }
