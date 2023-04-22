@@ -38,6 +38,7 @@ export function streakCounter(storage: Storage, date: Date): Streak {
             return streak;
         } catch (error) {
             console.error("Failed to parse streak from localStorage");
+            console.error("12345");
         }
     }
     const streak = buildStreak(date, {});
